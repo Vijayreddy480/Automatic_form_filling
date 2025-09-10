@@ -10,7 +10,7 @@ from deepgram import DeepgramClient, PrerecordedOptions
 from scipy.io.wavfile import write
 
 # ---------------- Setup ----------------
-API_KEY = "379ee8695b7b01d83e5c6761bb99edb6abb3b12b"
+API_KEY = ""# give your api key
 dg_client = DeepgramClient(API_KEY)
 
 if "started" not in st.session_state:
@@ -119,3 +119,4 @@ if st.session_state.started and st.session_state.current_field >= len(fields):
     if st.button("✅ Submit Form"):
         st.success("Form submitted!")
         st.json(st.session_state.form_data)
+
