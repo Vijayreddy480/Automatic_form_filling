@@ -4,7 +4,7 @@ from deepgram import DeepgramClient, PrerecordedOptions
 import base64
 
 st.title("Patient Registration Form Using Voice Recorder")
-API_KEY = "379ee8695b7b01d83e5c6761bb99edb6abb3b12b"
+API_KEY = ""#give your api key
 dg_client = DeepgramClient(API_KEY)
 
 if "used_audio" not in st.session_state:
@@ -115,3 +115,4 @@ if st.button("Submit"):
         "Doctor Name": st.session_state.get("doctor_name", ""),
         "Date & Time": st.session_state.get("date_time", "")
     })
+
