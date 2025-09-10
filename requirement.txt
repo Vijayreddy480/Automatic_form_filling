@@ -1,0 +1,12 @@
+deepgram-sdk
+assemblyai
+keyboard
+sounddevice
+streamlit
+streamlit-mic-recorder
+dateparser
+sounddevice
+wavio
+opencv-python
+scipy
+recognizers-text-suite
