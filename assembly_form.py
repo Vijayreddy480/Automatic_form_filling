@@ -10,7 +10,7 @@ import assemblyai as aai
 from scipy.io.wavfile import write
 
 # ---------------- Setup ----------------
-aai.settings.api_key = "b065f5c33fda424381840a1139b251a0"
+aai.settings.api_key = ""#give your api key
 config = aai.TranscriptionConfig(entity_detection=True)
 
 if "started" not in st.session_state:
@@ -109,3 +109,4 @@ if st.session_state.started and st.session_state.current_field >= len(fields):
     if st.button("✅ Submit Form"):
         st.success("Form submitted!")
         st.json(st.session_state.form_data)
+
